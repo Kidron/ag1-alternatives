@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AG1 vs. Cheaper Alternatives</title>
+<meta name="description" content="A price and ingredient comparison of AG1 with cheaper greens powders and a DIY fiber + multivitamin stack, plus what the research says about fiber.">
+<style>
+:root{--bg:#f6f8f5;--card:#fff;--ink:#1c2a22;--muted:#5b6b61;--green:#1f7a4d;--green2:#2fa36b;--accent:#e9f5ee;--line:#e1e8e3;--warn:#fff7e6;--warnline:#f0c36d;}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+a{color:var(--green)}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+header.hero{background:linear-gradient(135deg,#0f3d27 0%,#1f7a4d 55%,#3dbb7c 100%);color:#fff;padding:72px 0 64px}
+.hero h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1.1;margin:0 0 14px;letter-spacing:-.02em}
+.hero p{font-size:1.15rem;max-width:720px;opacity:.95;margin:0 0 26px}
+.pill{display:inline-block;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);padding:4px 12px;border-radius:999px;font-size:.85rem;margin-bottom:18px}
+.stats{display:flex;flex-wrap:wrap;gap:14px}
+.stat{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:14px;padding:14px 18px;min-width:180px}
+.stat b{display:block;font-size:1.6rem}
+.stat span{font-size:.9rem;opacity:.9}
+nav.toc{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+nav.toc .wrap{display:flex;gap:18px;overflow-x:auto;padding-top:12px;padding-bottom:12px;white-space:nowrap}
+nav.toc a{text-decoration:none;color:var(--muted);font-weight:600;font-size:.92rem}
+nav.toc a:hover{color:var(--green)}
+section{padding:56px 0 8px}
+h2{font-size:1.8rem;margin:0 0 8px;letter-spacing:-.01em}
+.sub{color:var(--muted);margin:0 0 24px}
+.tablewrap{overflow-x:auto;background:var(--card);border:1px solid var(--line);border-radius:16px;box-shadow:0 2px 10px rgba(0,0,0,.04)}
+table{border-collapse:collapse;width:100%;min-width:720px;font-size:.95rem}
+th,td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--accent);font-size:.85rem;text-transform:uppercase;letter-spacing:.04em;color:#2b4a39}
+tr:last-child td{border-bottom:none}
+tr.ag1 td{background:#fafafa}
+tr.best td{background:#f1faf5}
+.tag{display:inline-block;font-size:.72rem;font-weight:700;padding:2px 8px;border-radius:999px;background:var(--green);color:#fff;margin-left:6px;vertical-align:middle}
+.tag.gray{background:#8a978f}.tag.amber{background:#c98a12}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 2px 10px rgba(0,0,0,.04);display:flex;flex-direction:column}
+.card h3{margin:0 0 4px;font-size:1.2rem}
+.card .price{font-size:1.5rem;font-weight:800;color:var(--green);margin:6px 0 2px}
+.card .price small{font-size:.9rem;font-weight:600;color:var(--muted)}
+.card ul{padding-left:18px;margin:10px 0 16px;color:#2f3d35}
+.card li{margin:4px 0}
+.card .spacer{flex:1}
+.btn{display:inline-block;text-align:center;background:var(--green);color:#fff;text-decoration:none;font-weight:700;padding:10px 16px;border-radius:10px;margin:4px 6px 0 0;font-size:.92rem}
+.btn:hover{background:var(--green2)}
+.btn.ghost{background:#fff;color:var(--green);border:1.5px solid var(--green)}
+.featured{border:2px solid var(--green2);position:relative}
+.ribbon{position:absolute;top:-12px;left:20px;background:var(--green2);color:#fff;font-size:.75rem;font-weight:800;padding:3px 10px;border-radius:999px;letter-spacing:.03em}
+.stack{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;margin:12px 0 16px}
+.item{border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:#fbfdfc}
+.item b{display:block}
+.item .p{color:var(--green);font-weight:700}
+.item p{margin:4px 0 8px;font-size:.9rem;color:var(--muted)}
+.item a{font-size:.88rem;font-weight:700}
+.combos{background:var(--accent);border-radius:12px;padding:12px 16px;font-size:.95rem}
+.combos div{display:flex;justify-content:space-between;gap:10px;padding:4px 0;border-bottom:1px dashed #cfe3d7}
+.combos div:last-child{border-bottom:none}
+.evidence .card h3{font-size:1.05rem}
+.note{font-size:.85rem;color:var(--muted)}
+.callout{background:var(--card);border-left:5px solid var(--green);border-radius:12px;padding:18px 22px;box-shadow:0 2px 10px rgba(0,0,0,.04);margin-top:20px}
+.steps{counter-reset:s;list-style:none;padding:0;margin:0}
+.steps li{counter-increment:s;position:relative;padding:14px 16px 14px 60px;background:var(--card);border:1px solid var(--line);border-radius:14px;margin-bottom:10px}
+.steps li::before{content:counter(s);position:absolute;left:16px;top:14px;width:30px;height:30px;border-radius:50%;background:var(--green);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center}
+.disclaimer{background:var(--warn);border:1px solid var(--warnline);border-radius:16px;padding:20px 24px}
+.disclaimer h2{font-size:1.3rem}
+.disclaimer ul{margin:8px 0 0;padding-left:20px}
+footer{margin-top:56px;padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem;background:#fff}
+@media (max-width:600px){header.hero{padding:48px 0 40px}section{padding-top:40px}.stat{min-width:140px;flex:1}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="pill">Price &amp; ingredient research &middot; Prices checked Oct 10, 2026</span>
+    <h1>AG1 vs. cheaper alternatives</h1>
+    <p>What's actually in AG1, what the research says about fiber and gut health, and how to cover the same ground for a fraction of the price.</p>
+    <div class="stats">
+      <div class="stat"><b>$2.30&ndash;$3.30</b><span>AG1 per serving</span></div>
+      <div class="stat"><b>$0.34&ndash;$1.58</b><span>DIY stack per day</span></div>
+      <div class="stat"><b>2 g vs. ~28 g</b><span>AG1 fiber vs. daily target</span></div>
+    </div>
+  </div>
+</header>
+
+<nav class="toc"><div class="wrap">
+  <a href="#compare">Price comparison</a>
+  <a href="#ag1">What's in AG1</a>
+  <a href="#alternatives">Alternatives</a>
+  <a href="#evidence">The research</a>
+  <a href="#routine">Morning routine</a>
+  <a href="#disclaimer">Disclaimer</a>
+</div></nav>
+
+<main class="wrap">
+
+<section id="compare">
+  <h2>Price comparison</h2>
+  <p class="sub">Cost per serving or per day, based on prices listed on brand and retailer sites.</p>
+  <div class="tablewrap">
+  <table>
+    <thead><tr><th>Product</th><th>Price</th><th>Per serving / day</th><th>Fiber</th><th>Probiotics</th><th>Multivitamin</th><th>NSF</th></tr></thead>
+    <tbody>
+      <tr class="ag1"><td><b>AG1</b> <span class="tag gray">Baseline</span></td><td>$99 one-time (+$9 ship)<br>$79 / 30-day sub<br>$207 / 90-day sub</td><td>$3.30<br>$2.63<br>$2.30</td><td>2 g</td><td>10B CFU, 5 strains</td><td>Broad</td><td>Yes</td></tr>
+      <tr class="best"><td><b>DIY stack</b> <span class="tag">Best value</span><br><span class="note">Multi + fiber (+ optional probiotic)</span></td><td>Varies by combo</td><td>$0.34&ndash;$1.58</td><td>2.4&ndash;6 g per serving</td><td>Optional: 10B CFU LGG</td><td>Yes (separate)</td><td>&mdash;</td></tr>
+      <tr><td><b>Green Vibrance</b> <span class="tag">Closest match</span></td><td>$56 / 30 servings<br>$130 / 83 servings</td><td>$1.87<br>$1.57</td><td>3 g</td><td>25B CFU, 12 strains</td><td>Some (brand advises separate multi)</td><td>No</td></tr>
+      <tr><td><b>Bloom Greens &amp; Superfoods</b></td><td>$33.99 / 30</td><td>$1.13</td><td>Not listed</td><td>Yes (CFU not listed)</td><td>Weaker</td><td>None found</td></tr>
+      <tr><td><b>Live it Up Super Greens</b> <span class="tag amber">Price unverified</span></td><td>$59.99 / 30 (third-party)</td><td>~$1.33 (subscription)</td><td>&mdash;</td><td>5B CFU, 4 strains</td><td>No added synthetic vitamins</td><td>No</td></tr>
+      <tr><td><b>Amazing Grass Super Greens Digest</b></td><td>$28.49 / 30</td><td>$0.95</td><td>Little</td><td>1B CFU</td><td>No</td><td>&mdash;</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<section id="ag1">
+  <h2>What's in AG1</h2>
+  <p class="sub">From the AG1 Next Gen formula ingredient page.</p>
+  <div class="grid">
+    <div class="card">
+      <h3>AG1</h3>
+      <div class="price">$2.30&ndash;$3.30 <small>/ serving</small></div>
+      <ul>
+        <li><b>Fiber:</b> 2 g (~7% DV) from inulin (chicory root) and apple powder</li>
+        <li><b>Probiotics:</b> 10B CFU from 5 strains (LGG, L. acidophilus NCFM, B. lactis HN019, L. casei LC-11, L. plantarum LP-115)</li>
+        <li><b>Vitamins &amp; minerals:</b> broad multivitamin</li>
+        <li><b>Enzymes:</b> bromelain listed (no full enzyme blend seen)</li>
+        <li><b>Testing:</b> NSF Certified for Sport</li>
+        <li><b>Pricing:</b> one-time $99 + $9 shipping; 30-day subscription $79; 90-day subscription $207</li>
+      </ul>
+      <div class="spacer"></div>
+      <div><a class="btn" href="https://drinkag1.com/shop/greens-powder-pouch" target="_blank" rel="noopener">View product</a><a class="btn ghost" href="https://drinkag1.com/ingredients/ag1-nextgen-formula" target="_blank" rel="noopener">Ingredients</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="alternatives">
+  <h2>Cheaper alternatives</h2>
+  <p class="sub">Ranked from best value to closest one-scoop replacement.</p>
+
+  <div class="card featured" style="margin-bottom:22px">
+    <span class="ribbon">BEST VALUE</span>
+    <h3>1. The DIY stack</h3>
+    <div class="price">$0.34&ndash;$1.58 <small>/ day</small></div>
+    <p class="note" style="margin:0">Cover AG1's vitamins with a basic multi, get more fiber than AG1 from a dedicated fiber supplement, and add a probiotic only if you want one.</p>
+    <div class="stack">
+      <div class="item"><b>Nature Made Men's Multi</b><span class="p">$13.59 / 90 tablets (~$0.15/day)</span><p>Covers the multivitamin side of AG1.</p><a class="btn" href="https://www.naturemade.com/products/nature-made-mens-multi-tablets" target="_blank" rel="noopener">View product</a></div>
+      <div class="item"><b>Sunfiber (PHGG)</b><span class="p">$24.99 / 30 days ($0.83/day)<br>$64.99 / 90 days ($0.72/day)</span><p>6 g fiber per serving, three times AG1's 2 g.</p><a class="btn" href="https://tomorrowsnutrition.com/products/sunfiber-210-grams" target="_blank" rel="noopener">30-day</a><a class="btn" href="https://tomorrowsnutrition.com/products/sunfiber-90" target="_blank" rel="noopener">90-day</a></div>
+      <div class="item"><b>Metamucil Sugar-Free (psyllium)</b><span class="p">~$34.97 / 180 servings (~$0.19)</span><p>2.4 g soluble fiber per serving. Price seen in search results, not confirmed on the product page.</p><a class="btn" href="https://www.walmart.com/ip/Metamucil-Fiber-Supplement-Sugar-Free-Fiber-Powder-for-Digestive-Health-Orange-180-Servings/13314273" target="_blank" rel="noopener">View product</a></div>
+      <div class="item"><b>Culturelle Digestive Daily</b> <span class="tag gray">Optional</span><span class="p">$17.99 / 30 caps ($0.60/day)<br>$26.99 / 50 caps ($0.54/day)</span><p>10B CFU of LGG, the same strain found in AG1.</p><a class="btn" href="https://culturelle.com/products/digestive-daily-probiotic" target="_blank" rel="noopener">View product</a></div>
+    </div>
+    <div class="combos">
+      <div><span>Multi + Sunfiber + Culturelle</span><b>~$1.41&ndash;$1.58/day</b></div>
+      <div><span>Multi + Metamucil + Culturelle</span><b>~$0.94/day</b></div>
+      <div><span>Multi + fiber only</span><b>~$0.34&ndash;$0.98/day</b></div>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h3>2. Green Vibrance <span class="tag">Closest match</span></h3>
+      <div class="price">$1.57&ndash;$1.87 <small>/ serving</small></div>
+      <ul>
+        <li>$56 / 30 servings; $130 / 83 servings</li>
+        <li>25B CFU from 12 strains</li>
+        <li>3 g fiber</li>
+        <li>Full ingredient amounts disclosed</li>
+        <li>Some vitamins, but the brand says to take a separate multi</li>
+        <li>Not NSF certified; refrigerate after opening</li>
+      </ul>
+      <div class="spacer"></div>
+      <div><a class="btn" href="https://vibranthealth.com/products/green-vibrance" target="_blank" rel="noopener">View product</a></div>
+    </div>
+    <div class="card">
+      <h3>3. Bloom Greens &amp; Superfoods</h3>
+      <div class="price">$1.13 <small>/ serving</small></div>
+      <ul>
+        <li>$33.99 / 30 servings</li>
+        <li>Prebiotics, probiotics, enzymes, and fiber</li>
+        <li>CFU count and fiber grams aren't listed</li>
+        <li>Weaker vitamin coverage</li>
+        <li>No NSF certification found</li>
+      </ul>
+      <div class="spacer"></div>
+      <div><a class="btn" href="https://bloomnu.com/products/greens-superfoods" target="_blank" rel="noopener">View product</a></div>
+    </div>
+    <div class="card">
+      <h3>4. Live it Up Super Greens <span class="tag amber">Price unverified</span></h3>
+      <div class="price">~$1.33 <small>/ serving (sub)</small></div>
+      <ul>
+        <li>Price not confirmed on the brand site; third-party sites list $59.99 / 30, ~$1.33 on subscription</li>
+        <li>5B CFU from 4 strains</li>
+        <li>3 digestive enzymes</li>
+        <li>No added synthetic vitamins</li>
+        <li>Not NSF certified</li>
+      </ul>
+      <div class="spacer"></div>
+      <div><a class="btn" href="https://liveitup.com" target="_blank" rel="noopener">View product</a></div>
+    </div>
+    <div class="card">
+      <h3>5. Amazing Grass Super Greens Digest</h3>
+      <div class="price">$0.95 <small>/ serving</small></div>
+      <ul>
+        <li>$28.49 / 30 servings</li>
+        <li>Out of stock on the brand site when checked</li>
+        <li>1B CFU</li>
+        <li>Little fiber</li>
+        <li>No multivitamin</li>
+      </ul>
+      <div class="spacer"></div>
+      <div><a class="btn" href="https://amazinggrass.com/products/greens-blend-digest-pineapple-guava" target="_blank" rel="noopener">View product</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="evidence" class="evidence">
+  <h2>What the research says</h2>
+  <p class="sub">Fiber and diverticular disease: the guidance from major health sources.</p>
+  <div class="grid">
+    <div class="card">
+      <h3>NIDDK (National Institutes of Health)</h3>
+      <p>A high-fiber diet with less red meat may lower the risk of diverticular disease. The target is about <b>28 g of fiber a day</b> on a 2,000-calorie diet, increased gradually.</p>
+      <div class="spacer"></div>
+      <div><a class="btn ghost" href="https://www.niddk.nih.gov/health-information/digestive-diseases/diverticulosis-diverticulitis/eating-diet-nutrition" target="_blank" rel="noopener">Read source</a></div>
+    </div>
+    <div class="card">
+      <h3>American Gastroenterological Association guideline</h3>
+      <p>Suggests a fiber-rich diet or a fiber supplement after diverticulitis (very low quality evidence, no set dose). Suggests <b>against</b> probiotics after uncomplicated diverticulitis.</p>
+      <div class="spacer"></div>
+      <div><a class="btn ghost" href="https://gastro.org/clinical-guidance/management-of-acute-diverticulitis/" target="_blank" rel="noopener">Read source</a></div>
+    </div>
+    <div class="card">
+      <h3>AGA 2021 clinical practice update</h3>
+      <p>Evidence is insufficient for probiotics to prevent recurrence, and a fiber supplement doesn't replace a good diet.</p>
+      <div class="spacer"></div>
+      <div><a class="btn ghost" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7878331/" target="_blank" rel="noopener">Read source</a></div>
+    </div>
+  </div>
+  <div class="callout">
+    <b>Takeaway:</b> AG1's 2 g of fiber is small next to a 25&ndash;30 g daily target. Any benefit people notice may come from the daily routine, the prebiotic inulin, the probiotics, the minerals, or simply drinking extra water, and the research can't separate these.
+  </div>
+</section>
+
+<section id="routine">
+  <h2>Morning routine tip</h2>
+  <p class="sub">Keep the habit, swap what's in the glass.</p>
+  <ol class="steps">
+    <li><b>Take it first thing.</b> Mix your fiber into a full glass of water in the morning, before eating, the same way many people take AG1.</li>
+    <li><b>Start small.</b> Begin with a low dose and build up over a week or two to avoid bloating.</li>
+    <li><b>Drink water.</b> Keep drinking water through the day when adding fiber.</li>
+    <li><b>Space out medications.</b> Fiber can slow absorption of some medications, so keep them about 2 hours apart.</li>
+  </ol>
+  <div class="callout">
+    <b>Cheapest test:</b> psyllium husk you may already have. Mix 1 tsp into 8&ndash;10 oz of water first thing in the morning and drink it right away, building to 1 tbsp over 1&ndash;2 weeks. Keep medications 2 hours apart, and try it for 3&ndash;4 weeks before judging.
+  </div>
+</section>
+
+<section id="disclaimer">
+  <div class="disclaimer">
+    <h2>Disclaimer</h2>
+    <p style="margin:0">This page is general research, <b>not medical advice</b>.</p>
+    <ul>
+      <li>Talk to a doctor before starting or changing supplements.</li>
+      <li>Add fiber gradually and with plenty of water.</li>
+      <li>Some diverticulitis flare-ups call for a temporary low-fiber diet.</li>
+      <li>Prices and availability change; check the product pages before buying.</li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">Prices checked Oct 10, 2026, from brand and retailer websites. Product links go to the seller's site. Not affiliated with any brand listed.</div>
+</footer>
+</body>
+</html>
